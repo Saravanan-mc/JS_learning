@@ -1,107 +1,108 @@
-/******************************************
- 03-operators.js
- JavaScript Operators – Beginner to Advanced
-******************************************/
 
-// -------------------------------
-// 1. ARITHMETIC OPERATORS
-// -------------------------------
-let a = 10;
-let b = 3;
+//Arithmetic Operators
 
-console.log("a + b =", a + b); // Addition
-console.log("a - b =", a - b); // Subtraction
-console.log("a * b =", a * b); // Multiplication
-console.log("a / b =", a / b); // Division
-console.log("a % b =", a % b); // Modulus
-console.log("a ** b =", a ** b); // Exponentiation
-console.log("++a =", ++a); // Pre-increment
-console.log("b-- =", b--); // Post-decrement
-console.log("b after decrement =", b);
+let a = 10, b = 5;
+console.log("Arithmetic Operators:");
+console.log("a + b =", a + b);//15
+console.log("a - b =", a - b);//5
+console.log("a * b =", a * b);//50
+console.log("a / b =", a / b);//2
+console.log("a % b =", a % b);//0
+console.log("a ** b =", a ** b);//100000
+a++;
+console.log("a++ =", a);//11
+b--;
+console.log("b-- =", b); //4
+console.log("\n");
 
-// -------------------------------
-// 2. ASSIGNMENT OPERATORS
-// -------------------------------
+
+// Assignment Operators
 let x = 5;
-x += 3; // x = x + 3
-console.log("x += 3 ->", x);
+console.log("Assignment Operators:");
+console.log("x =", x);//5
 
-x -= 2; // x = x - 2
-console.log("x -= 2 ->", x);
+x += 3; 
+console.log("x += 3 →", x);//8
 
-x *= 2; // x = x * 2
-console.log("x *= 2 ->", x);
+x -= 2;
+console.log("x -= 2 →", x);//6
 
-x /= 3; // x = x / 3
-console.log("x /= 3 ->", x);
+x *= 4;
+console.log("x *= 4 →", x);//24
 
-x %= 2; // x = x % 2
-console.log("x %= 2 ->", x);
+x /= 2;
+console.log("x /= 2 →", x);//12
 
-// -------------------------------
-// 3. COMPARISON OPERATORS
-// -------------------------------
-let m = 10;
-let n = "10";
+x %= 2;
+console.log("x %= 2 →", x);//0
 
-console.log("m == n ?", m == n);   // true (value only)
-console.log("m === n ?", m === n); // false (value + type)
-console.log("m != n ?", m != n);   // false
-console.log("m !== n ?", m !== n); // true
-console.log("m > 5 ?", m > 5);
-console.log("m < 15 ?", m < 15);
-console.log("m >= 10 ?", m >= 10);
-console.log("m <= 9 ?", m <= 9);
+console.log("\n");
 
-// -------------------------------
-// 4. LOGICAL OPERATORS
-// -------------------------------
-let p = true;
-let q = false;
 
-console.log("p && q =", p && q); // AND
-console.log("p || q =", p || q); // OR
-console.log("!p =", !p);         // NOT
-console.log("!q =", !q);
+// Comparison Operators
+a = 10; b = 5;
+console.log("Comparison Operators:");
+console.log("a == '10' →", a == "10");// true
+console.log("a === '10' →", a === "10");// false
+console.log("a != b →", a != b);// true
+console.log("a !== '10' →", a !== "10");// true
+console.log("a > b →", a > b);// true
+console.log("a < b →", a < b);// false
+console.log("a >= 10 →", a >= 10);// true
+console.log("b <= 5 →", b <= 5);// true
 
-// -------------------------------
-// 5. TERNARY OPERATOR
-// -------------------------------
-let age = 18;
-let status = age >= 18 ? "Adult" : "Minor";
-console.log("Ternary Operator:", status);
+console.log("\n");
 
-// -------------------------------
-// 6. BITWISE OPERATORS
-// -------------------------------
-let bit1 = 5;  // 0101
-let bit2 = 3;  // 0011
 
-console.log("bit1 & bit2 =", bit1 & bit2); // AND -> 1
-console.log("bit1 | bit2 =", bit1 | bit2); // OR -> 7
-console.log("bit1 ^ bit2 =", bit1 ^ bit2); // XOR -> 6
-console.log("~bit1 =", ~bit1);             // NOT -> -6
-console.log("bit1 << 1 =", bit1 << 1);     // Left shift -> 10
-console.log("bit1 >> 1 =", bit1 >> 1);     // Right shift -> 2
-console.log("bit1 >>> 1 =", bit1 >>> 1);   // Zero-fill right shift -> 2
+// Logical Operators
+console.log("Logical Operators:");
+console.log("true && false →", true && false);// false
+console.log("true || false →", true || false);// true
+console.log("!true →", !true);// false
 
-// -------------------------------
-// 7. STRING OPERATORS
-// -------------------------------
-let str1 = "Hello";
-let str2 = "World";
-let str3 = str1 + " " + str2; // Concatenation
-console.log("String Concatenation:", str3);
+console.log("\n");
 
-// -------------------------------
-// 8. TYPE OPERATORS
-// -------------------------------
-console.log("typeof str1:", typeof str1);
-console.log("typeof a:", typeof a);
-console.log("instanceof Array?", [1,2,3] instanceof Array);
-console.log("instanceof Object?", {name:"Alice"} instanceof Object);
 
-// -------------------------------
-// ✅ ALL OPERATORS COVERED
-// -------------------------------
-console.log("All JS operators demonstrated successfully!");
+//Bitwise Operators
+a = 5; b = 1;
+console.log("Bitwise Operators:");
+console.log("a & b =", a & b);// 1
+console.log("a | b =", a | b);// 5
+console.log("a ^ b =", a ^ b);// 4
+console.log("~a =", ~a);// -6
+console.log("a << 1 =", a << 1);// 10
+console.log("a >> 1 =", a >> 1);// 2
+
+
+console.log(typeof 123);// "number"
+console.log(typeof "Hello");// "string"
+console.log(typeof true);// "boolean"
+console.log(typeof undefined);// "undefined"
+console.log(typeof null);// "object"
+console.log(typeof {});// "object"
+console.log(typeof []);// "object"
+console.log(typeof function(){});//"function"
+
+
+let arr = [1, 2, 3];
+console.log(arr instanceof Array);// true
+console.log(arr instanceof Object);// true
+console.log(arr instanceof String);// false
+
+function Person(name) {
+  this.name = name;
+}
+let p1 = new Person("Arun");
+console.log(p1 instanceof Person);// true
+console.log(p1 instanceof Object);// true
+
+
+//String Operators
+let message = "Hello";
+message += " World!";
+console.log(message);
+let v = 5 + "5";
+console.log(v); // "55" (string)
+console.log("The answer is " + 10 + 5); 
+
+
