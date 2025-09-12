@@ -1,49 +1,17 @@
-/******************************************
- 01-variables.js
- JavaScript Variables – Beginner to Advanced
-******************************************/
+console.log("Hello world");
 
-// -------------------------------
-// 1. VAR – Function Scoped
-// -------------------------------
-var oldVar = "I am a var variable";
-console.log("Var:", oldVar);
+//Old Var
+var var1 = "Hello"
+console.log(var1);
 
-// var can be re-declared and updated
-var oldVar = "Var can be redeclared";
-console.log("Var redeclared:", oldVar);
+//let is new 
+let let1 = "Hii"
+console.log(let1);
 
-// -------------------------------
-// 2. LET – Block Scoped
-// -------------------------------
-let blockVar = "I am a let variable";
-console.log("Let:", blockVar);
 
-// let can be updated but not redeclared in same scope
-blockVar = "Let can be updated";
-console.log("Let updated:", blockVar);
-
-// -------------------------------
-// 3. CONST – Constant (cannot be updated/redeclared)
-// -------------------------------
-const constantVar = "I am a constant variable";
-console.log("Const:", constantVar);
-
-// Uncommenting below lines will throw errors
-// constantVar = "Cannot update"; 
-// const constantVar = "Cannot redeclare";
-
-// -------------------------------
-// 4. MULTIPLE DECLARATIONS
-// -------------------------------
-let a = 10, b = 20, c = 30;
-console.log("Multiple variables:", a, b, c);
-
-// -------------------------------
-// 5. VARIABLE TYPES
-// -------------------------------
-let numberVar = 42;          // Number
-let stringVar = "Hello JS";  // String
+//Variable
+let numberVar = 45;          // Number
+let stringVar = "Hello";  // String
 let booleanVar = true;       // Boolean
 let undefinedVar;            // Undefined
 let nullVar = null;          // Null
@@ -58,9 +26,7 @@ console.log("Null:", nullVar);
 console.log("Object:", objectVar);
 console.log("Array:", arrayVar);
 
-// -------------------------------
-// 6. TYPEOF OPERATOR
-// -------------------------------
+
 console.log("Type of numberVar:", typeof numberVar);
 console.log("Type of stringVar:", typeof stringVar);
 console.log("Type of booleanVar:", typeof booleanVar);
@@ -69,9 +35,7 @@ console.log("Type of nullVar:", typeof nullVar); // Object (quirk)
 console.log("Type of objectVar:", typeof objectVar);
 console.log("Type of arrayVar:", Array.isArray(arrayVar)); // true
 
-// -------------------------------
-// 7. DYNAMIC TYPING
-// -------------------------------
+//Dynamic Type
 let dynamicVar = 10; // Initially number
 console.log("Dynamic var:", dynamicVar, typeof dynamicVar);
 
@@ -81,18 +45,32 @@ console.log("Dynamic var:", dynamicVar, typeof dynamicVar);
 dynamicVar = true; // Reassigned to boolean
 console.log("Dynamic var:", dynamicVar, typeof dynamicVar);
 
-// -------------------------------
-// 8. VARIABLE HOISTING (var vs let/const)
-// -------------------------------
-console.log("Hoisting Example:");
-// console.log(hoistedVar); // undefined (var is hoisted)
-// console.log(hoistedLet); // ReferenceError
-// console.log(hoistedConst); // ReferenceError
 
-var hoistedVar = "I am hoisted";
-let hoistedLet = "I am not hoisted like var";
-const hoistedConst = "I am also not hoisted like var";
+//Type Conversion (Explicit / Manual)
 
-console.log("Hoisted Var:", hoistedVar);
-console.log("Hoisted Let:", hoistedLet);
-console.log("Hoisted Const:", hoistedConst);
+// String to Number
+let str = "123";
+let num = Number(str);
+console.log(num, typeof num); // 123 "number"
+
+// Number to String
+let n = 99;
+let s = String(n);
+console.log(s, typeof s); // "99" "string"
+
+// Boolean to Number
+console.log(Number(true));  // 1
+console.log(Number(false)); // 0
+
+// Number to Boolean
+console.log(Boolean(0));   // false
+console.log(Boolean(1));   // true
+
+
+//Implicit Or Automatic
+console.log("5" + 2);  // "52"   string
+console.log("5" - 2);  // 3     number
+console.log("5" * "2"); // 10    number
+console.log(1 + true);  // 2      number
+console.log(1 + null);  // 1     0
+console.log(1 + undefined); // NaN 
