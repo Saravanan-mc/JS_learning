@@ -14,7 +14,7 @@ console.log("Fruits:", fruits);
 console.log("Numbers:", numbers);
 console.log("Mixed:", mixed);
 
-// -------------------------------
+// --------------------------
 // 2. ACCESS ELEMENTS
 // -------------------------------
 console.log("First fruit:", fruits[0]);
