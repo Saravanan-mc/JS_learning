@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All DOM Events Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button, input, select {
+      margin: 10px 0;
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+    #hoverBox {
+      width: 150px;
+      height: 100px;
+      background: lightgray;
+      text-align: center;
+      line-height: 100px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">DOM Events Example</h1>
+
+  <!-- Click / Double Click -->
+  <button id="clickBtn">Click Me</button>
+  <button id="dblClickBtn">Double Click Me</button>
+
+  <!-- Mouse Events -->
+  <div id="hoverBox">Hover Over Me</div>
+
+  <!-- Keyboard & Input -->
+  <input id="textInput" type="text" placeholder="Type something...">
+  <p id="keyOutput"></p>
+
+  <!-- Change Event -->
+  <select id="mySelect">
+    <option value="">Choose...</option>
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+  </select>
+  <p id="selectOutput"></p>
+
+  <!-- Form Submit -->
+  <form id="myForm">
+    <input type="text" id="formInput" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+  </form>
+  <p id="formOutput"></p>
+  <script src="10-events.js"></script>
+</body>
+</html>
